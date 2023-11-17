@@ -208,6 +208,10 @@ footer .nav-link {
 
 /* медиа-запрос для мобильных устройств */
 @media screen and (max-width: 768px) {
+    .logo-link{
+        width: 215px;
+        height: 64px;
+    }
     .header-container {
         flex-direction: column;
         align-items: flex-start;
@@ -229,6 +233,47 @@ footer .nav-link {
         flex-direction: column;
         gap: 16px;
     }
+
+    .ContainerMainContent {
+        padding: 16px;
+      }
+    
+      .SneakerBig {
+        padding: 24px;
+        height: auto;
+      }
+    
+      .SneakerBigImg {
+        height: 300px;
+        border-radius: 24px;
+      }
+    
+      .SneakerBigTitle {
+        font-size: 24px;
+        line-height: 28px;
+      }
+    
+      .SneakerBigSubtitle {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    
+      .SneakerBigText {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    
+      .SneakerBigParametersTitle {
+        font-size: 16px;
+      }
+    
+      .SneakerBigParametersLine {
+        height: 1px;
+      }
+    
+      .SneakerBigParametersValue {
+        font-size: 16px;
+      }
 }
 
 /* медиа-запрос для планшетов */
@@ -286,13 +331,11 @@ footer .nav-link {
 }
 
 .SneakerBigInfo {
-    align-self: stretch;
-    height: 860px;
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: flex-start;
     gap: 24px;
-    display: flex;
+    align-self: stretch;
 }
 
 .SneakerBigTitle {
@@ -334,12 +377,11 @@ footer .nav-link {
 }
 
 .SneakerBigParameters {
-    flex: 1 1 0;
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: flex-start;
     gap: 24px;
-    display: inline-flex;
+    flex: 1 0 0;
 }
 
 .SneakerBigParametersHeader {
@@ -354,7 +396,7 @@ footer .nav-link {
 
 .SneakerBigParametersTitle {
     color: #121723;
-    font-size: 30px;
+    font-size: 20px;
     font-family: Anonymous Pro;
     font-weight: 400;
     word-wrap: break-word;
@@ -378,4 +420,21 @@ footer .nav-link {
     overflow: auto;
     padding: 48px;
     overflow-y: hidden;
+}
+
+.SneakerBigParametersValue {
+    color: var(--black, #121723);
+    text-align: right;
+    font-family: Anonymous Pro;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.SneakerBigParametersInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
 }
